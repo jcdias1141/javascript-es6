@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript ES6 - Variáveis</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>JavaScript ES6 - Variáveis</h1>
+      </header>
+
+      <main>
+        <div class="topic-container">
+          <div class="example-container">
+            <h3>Nome das variáveis</h3>
+            <ul>
+              <li>Os nomes podem iniciar com <code>$</code> ou letras</li>
+              <li>
+                Case sensitive - <code>carro</code> é diferente de
+                <code>Carro</code>
+              </li>
+              <li>Não utilizar palavras reservadas</li>
+              <li>
+                Camel Case - por padrão criamos variáveis assim:
+                <code>precoCarro</code>
+              </li>
+            </ul>
+            <p></p>
+          </div>
+          <div class="example-container">
+            <h3>Declaração das variáveis</h3>
+            <ul>
+              <li>
+                <code> let carro = "Fiat";</code>
+                <br />
+                <code>console.log(carro);</code>
+              </li>
+            </ul>
+            <p></p>
+          </div>
+          <div class="example-container">
+            <h3>Ordem da declaração</h3>
+            <ul>
+              <li>
+                <code> console.log(carro);</code>
+                <br />
+                <code>let carro = "Fiat";</code>
+                <br>
+                <code>// Retorna undefined</code>
+              </li>
+              <li>
+                <code>let marca = "Chevrolet";</code>
+                <br>
+                <code>console.log(marca);</code>
+                <br>
+                <code>// Retorna Chevrolet</code>
+              </li>
+            </ul>
+            <p></p>
+          </div>
+
+          <div class="example-container">
+            <h3>Recaptulando</h3>
+            <ul>
+              <li>
+                <p><code>var</code> e <code>let</code> eu consigo alterar o valor</p>
+              </li>
+              <li><code>const</code> eu não consigo alterar o valor</li>
+            </ul>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="nav-links">
+          <a href="../../index.html">← Voltar ao Índice</a>
+        </div>
+      </main>
+
+      <footer>
+        <p>JavaScript ES6 - Estudos - 2025</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
