@@ -1,36 +1,73 @@
-# JavaScript ES6 - Estudo Prático
+# 📚 Estudos JavaScript
 
-Um guia interativo para aprender os fundamentos do JavaScript ES6 com exemplos práticos.
+Bem-vindo ao meu repositório de estudos JavaScript! Aqui documento minha jornada de aprendizado com exemplos práticos e explicações didáticas.
 
-## Objetivo
+## 🎯 Conteúdo
 
-Este projeto documenta minha jornada de aprendizado sobre JavaScript ES6, organizando cada conceito de forma clara e acessível. Ele serve tanto como referência pessoal quanto como material de estudo.
+1. [Variáveis](js/01-variaveis.js) - Nossas caixinhas mágicas
+   - let
+   - const
+   - var (legado)
 
-## Estrutura
+2. [Tipos de Dados](js/02-tipos-de-dados.js) - Os diferentes tipos de coisas que guardamos
+   - String (Texto)
+   - Number (Números)
+   - Boolean (Verdadeiro/Falso)
+   - Null e Undefined
+   - Object (Objeto)
+   - Array (Lista)
+   - Symbol
+   - Map e Set
 
-## Tópicos Abordados
+3. [Operadores](js/03-operadores.js) - Como fazemos contas e comparações
+   - Aritméticos
+   - Comparação
+   - Lógicos
 
-- **Variáveis**: `let`, `const` e escopo de bloco
-- **Tipos de Dados**: primitivos e complexos
-- **Números e Operadores**: operações matemáticas e comparações
-- **Boolean e Condicionais**: estruturas de controle
-- **Funções**: declarações, arrow functions, parâmetros
-- **Objetos**: propriedades, métodos e protótipos
-- **Classes**: sintaxe de classes e herança
-- **Módulos**: importação e exportação
-- **Promises**: operações assíncronas
-- **Recursos Adicionais**: template literals, destructuring, etc.
+4. [Estruturas de Controle](js/04-estruturas-controle.js) - Como tomamos decisões
+   - if/else
+   - switch
+   - Loops (for, while)
 
-## Como Usar
+## 💡 Como Usar
 
-1. Clone este repositório
-2. Abra o `index.html` em seu navegador
-3. Navegue pelos tópicos na ordem sugerida ou conforme interesse
+### Localmente
+1. Cada arquivo contém exemplos práticos e comentários explicativos
+2. Abra o `index.html` no navegador para usar o playground interativo
+3. Use o console do navegador (F12) para testar os códigos
+4. Pratique modificando os exemplos
+5. Faça os exercícios propostos em cada seção
 
-## Referências
+### Online (Editores Web)
+Você também pode testar os códigos nestes editores online:
 
-- [MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+1. [CodePen](https://codepen.io)
+   - Ótimo para experimentos rápidos
+   - Interface amigável
+   - Visualização em tempo real
+
+2. [JSFiddle](https://jsfiddle.net)
+   - Bom para compartilhar códigos
+   - Suporta múltiplos arquivos
+   - Fácil de usar
+
+3. [CodeSandbox](https://codesandbox.io)
+   - Ambiente de desenvolvimento completo
+   - Suporta projetos mais complexos
+   - Ótimo para testar bibliotecas
+
+## 🚀 Dicas de Estudo
+
+1. Pratique cada conceito separadamente
+2. Faça pequenos projetos combinando os conceitos
+3. Use o console do navegador para testar os códigos
+4. Comente seu código para lembrar o que cada parte faz
+5. Não tenha medo de errar, é assim que se aprende!
+
+## 📝 Licença
+
+Este repositório é para fins educacionais.
 
 ---
 
-*Este projeto é puramente educacional e está em constante evolução.*
+*Feito com muito ☕*

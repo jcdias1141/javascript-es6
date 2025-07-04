@@ -3,19 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estudos JavaScript ES6</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Estudos JavaScript</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+      .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .output {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        padding: 15px;
+        margin-top: 20px;
+        min-height: 100px;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      .buttons {
+        margin: 20px 0;
+      }
+      button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+    </style>
   </head>
   <body>
-    <main>
-      <div>
-        <h1>Estudos JavaScript ES6</h1>
-        <p>
-          Cada assunto fica separado dentro da pasta js e são ordenados por
-          números.
-        </p>
+    <div class="container">
+      <h1>🚀 Playground JavaScript</h1>
+      <p>Use este playground para testar seus códigos JavaScript!</p>
+      
+      <div class="buttons">
+        <button onclick="testarVariaveis()">Testar Variáveis</button>
+        <button onclick="testarTiposDados()">Testar Tipos de Dados</button>
+        <button onclick="testarOperadores()">Testar Operadores</button>
+        <button onclick="testarEstruturas()">Testar Estruturas</button>
       </div>
-    </main>
-    <script src="/js/01-variaveis.js"></script>
+
+      <div class="output" id="output">
+        // Os resultados aparecerão aqui
+        // Abra o console do navegador (F12) para ver mais detalhes
+      </div>
+    </div>
+
+    <!-- Scripts de estudo -->
+    <script src="js/01-variaveis.js"></script>
+    <script src="js/02-tipos-de-dados.js"></script>
+    <script src="js/03-operadores.js"></script>
+    <script src="js/04-estruturas-controle.js"></script>
+
+    <script>
+      // Função para limpar e escrever no output
+      function escrever(texto) {
+        const output = document.getElementById('output');
+        output.textContent = texto;
+        console.log(texto);
+      }
+
+      // Funções de teste para cada módulo
+      function testarVariaveis() {
+        let nome = "João";
+        let idade = 25;
+        const PI = 3.14;
+
+        escrever(`
+          Testando Variáveis:
+          - let nome = "${nome}"
+          - let idade = ${idade}
+          - const PI = ${PI}
+          
+          Tente modificar estes valores no console!
+        `);
+      }
+
+      function testarTiposDados() {
+        let texto = "Olá";
+        let numero = 42;
+        let booleano = true;
+        let array = [1, 2, 3];
+        let objeto = { nome: "Maria", idade: 20 };
+
+        escrever(`
+          Testando Tipos de Dados:
+          - String: "${texto}"
+          - Number: ${numero}
+          - Boolean: ${booleano}
+          - Array: [${array}]
+          - Object: ${JSON.stringify(objeto)}
+          
+          Experimente criar seus próprios tipos no console!
+        `);
+      }
+
+      function testarOperadores() {
+        let a = 10;
+        let b = 5;
+
+        escrever(`
+          Testando Operadores:
+          - Soma: ${a} + ${b} = ${a + b}
+          - Subtração: ${a} - ${b} = ${a - b}
+          - Multiplicação: ${a} * ${b} = ${a * b}
+          - Divisão: ${a} / ${b} = ${a / b}
+          
+          Tente outras operações no console!
+        `);
+      }
+
+      function testarEstruturas() {
+        let contador = 0;
+        let resultado = "";
+
+        // Exemplo de for
+        for(let i = 1; i <= 3; i++) {
+          resultado += `Contagem: ${i}\n`;
+        }
+
+        // Exemplo de if
+        let hora = new Date().getHours();
+        if(hora < 12) {
+          resultado += "Bom dia!";
+        } else if(hora < 18) {
+          resultado += "Boa tarde!";
+        } else {
+          resultado += "Boa noite!";
+        }
+
+        escrever(resultado);
+      }
+    </script>
   </body>
 </html>

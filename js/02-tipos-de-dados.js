@@ -1,75 +1,87 @@
-//Exemplos Simples de Tipos de Dados em JavaScript ES6
-//Strings (Textos)
-let nome = "Luna";
-let frase = "Eu gosto de sorvete";
-let template = `Olá, meu nome é ${nome}`; // Template strings do ES6!
+// 🎨 TIPOS DE DADOS - Os Diferentes Tipos de Coisas que Guardamos
 
-console.log(template); // Mostra: Olá, meu nome é Luna
+// 📝 String (Texto)
+let nome = "Maria";
+let sobrenome = 'Silva';
+let frase = `Meu nome é ${nome}`; // Template string
 
-//--------------------------------------------------------------
-// Números para contar e calcular
-let idade = 4;
-let altura = 1.05;
-let negativo = -10;
+console.log(nome); // Maria
+console.log(sobrenome); // Silva
+console.log(frase); // Meu nome é Maria
+console.log("Tamanho do nome:", nome.length); // 5
 
-console.log(idade + 1); // Mostra: 5
+// 🔢 Number (Números)
+let idade = 25;        // Número inteiro
+let altura = 1.75;     // Número decimal
+let temperatura = -5;   // Número negativo
+let infinito = Infinity; // Infinito
 
-//--------------------------------------------------------------
-// Respostas de sim ou não boolean
-let queroSorvete = true;
-let estaChovendo = false;
+console.log("Idade:", idade);
+console.log("Altura:", altura);
+console.log("Temperatura:", temperatura);
+console.log("Infinito:", infinito);
 
-console.log(queroSorvete); // Mostra: true
+// ✅ Boolean (Verdadeiro/Falso)
+let estouFeliz = true;
+let estouTriste = false;
 
-//--------------------------------------------------------------
-// Caixa vazia que não decidimos o que vai dentro
-let brinquedo;
+console.log("Estou feliz?", estouFeliz);
+console.log("Estou triste?", estouTriste);
 
-console.log(brinquedo); // Mostra: undefined
+// 🚫 Null e Undefined
+let caixaVazia = null;        // Caixa vazia de propósito
+let caixaSemNada = undefined; // Caixa que ainda não recebeu nada
 
-//--------------------------------------------------------------
-// Caixa que decidimos deixar vazia
-let caixaVazia = null;
+console.log("Caixa vazia:", caixaVazia);
+console.log("Caixa sem nada:", caixaSemNada);
 
-console.log(caixaVazia); // Mostra: null
-
-//--------------------------------------------------------------
-// Cada Symbol é único como um adesivo especial
-let meuAdesivo = Symbol("estrela");
-let outroAdesivo = Symbol("estrela");
-
-console.log(meuAdesivo === outroAdesivo); // Mostra: false
-
-//--------------------------------------------------------------
-//Object (Mochila com vários itens)
-let mochila = {
-  lanche: "maçã",
-  brinquedo: "carrinho",
-  cor: "azul",
+// 📦 Object (Objeto)
+const pessoa = {
+    nome: "Ana",
+    idade: 8,
+    gostoSorvete: true,
+    brinquedos: ["boneca", "bola"]
 };
 
-console.log(mochila.lanche); // Mostra: maçã
+console.log("Pessoa:", pessoa);
+console.log("Nome da pessoa:", pessoa.nome);
+console.log("Brinquedos:", pessoa.brinquedos);
 
-//--------------------------------------------------------------
-//Array (Trem com vários vagões) -  Um trem onde cada vagão tem algo diferente
-let trem = ["boneca", "bola", "bloco", "carrinho"];
+// 📋 Array (Lista)
+const cores = ["vermelho", "azul", "amarelo"];
+const numeros = [1, 2, 3, 4, 5];
+const misturado = ["texto", 42, true, { tipo: "objeto" }];
 
-console.log(trem[0]); // Mostra: boneca (o primeiro vagão)
-console.log(trem.length); // Mostra: 4 (quantos vagões tem)
+console.log("Cores:", cores);
+console.log("Primeira cor:", cores[0]);
+console.log("Quantidade de cores:", cores.length);
 
-//--------------------------------------------------------------
-//Map (Nova caixa organizadora ES6)
-// Caixa onde cada item tem uma etiqueta especial
-let baú = new Map();
-baú.set("tesouro", "moedas de ouro");
-baú.set("segredo", "chave mágica");
+// 🏷️ Symbol (Identificador Único)
+const simbolo1 = Symbol("descrição");
+const simbolo2 = Symbol("descrição");
 
-console.log(baú.get("tesouro")); // Mostra: moedas de ouro
+console.log("Símbolos iguais?", simbolo1 === simbolo2); // false
 
-//--------------------------------------------------------------
-//Set (Caixa que não aceita repetidos)
-// Caixa que guarda só um de cada brinquedo
-let brinquedosÚnicos = new Set(['urso', 'bola', 'urso', 'carrinho']);
+// 🗺️ Map (Mapa de Chave-Valor)
+const mapa = new Map();
+mapa.set("chave1", "valor1");
+mapa.set("chave2", "valor2");
 
-console.log(brinquedosÚnicos.size); // Mostra: 3 (não conta o urso repetido)
-console.log(brinquedosÚnicos.has('bola')); // Mostra: true
+console.log("Valor da chave1:", mapa.get("chave1"));
+
+// 📑 Set (Conjunto sem Repetição)
+const conjunto = new Set([1, 2, 2, 3, 3, 4]);
+console.log("Conjunto:", conjunto); // Set(4) {1, 2, 3, 4}
+
+// 💡 Dicas:
+// 1. Use o tipo mais apropriado para cada dado
+// 2. Arrays são ótimos para listas ordenadas
+// 3. Objetos são perfeitos para agrupar informações relacionadas
+// 4. Set é útil quando precisamos de valores únicos
+// 5. Map é ótimo para relacionar chaves e valores
+
+// 🎮 Exercícios:
+// 1. Crie um objeto com suas informações (nome, idade, hobbies)
+// 2. Faça um array com suas comidas favoritas
+// 3. Use template string para criar uma frase com seus dados
+// 4. Crie um Set com números e tente adicionar números repetidos
